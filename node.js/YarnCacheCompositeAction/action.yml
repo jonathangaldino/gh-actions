@@ -10,6 +10,9 @@ inputs:
   hash:
     description: 'hashFiles output of the yarn.lock file'
     required: true
+  repository_name:
+    description: 'name of the repo that is invoking this composite action'
+    default: ${{ github.repository }}
 
 runs:
   using: "composite"
