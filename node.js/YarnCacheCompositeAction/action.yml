@@ -12,7 +12,7 @@ inputs:
     required: true
   repository_name:
     description: 'name of the repo that is invoking this composite action'
-    required: true
+    default: ${{ github.event.repository.name }}
 
 runs:
   using: "composite"
